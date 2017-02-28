@@ -1,0 +1,7 @@
+---
+- name: Install all
+  hosts: all
+  become: yes
+  tasks:
+    - name: Run the command if the specified file does not exist.
+      command: ls -l
